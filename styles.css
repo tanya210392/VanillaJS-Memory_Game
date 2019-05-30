@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div#game {
+    width: 600px;
+    margin: 40px auto 0 auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+div#game > div {
+    background: #fff;
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 24%;
+    height: 70px;
+    margin: 4px 0;
+    padding: 20px;
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    -webkit-transition: -webkit-transform .3s linear;
+
+    transition: -webkit-transform .3s linear;
+
+    transition: transform .3s linear;
+
+    transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+div#game > div[style="background: green;"] {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+}
